@@ -1,0 +1,120 @@
+@import './colors.css';
+
+.left-panel {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  padding: 1rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.control-group {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.control-group h3 {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--text);
+  background: var(--background);
+}
+
+.layer-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.layer-button {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--background);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.layer-button.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.indicators {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.indicator-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+
+.indicator-label {
+  color: var(--text-light);
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.indicator-value {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.risk-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.risk-level {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: var(--background);
+  border: 1px solid var(--border);
+}
+
+.risk-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.risk-high { background: var(--danger); }
+.risk-medium { background: var(--warning); }
+.risk-low { background: var(--success); }

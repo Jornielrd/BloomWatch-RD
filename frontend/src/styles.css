@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* Custom components */
+.left-panel {
+  width: 320px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.trend-viewer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.preset-areas button {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.preset-areas button:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .left-panel {
+    width: 100%;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
